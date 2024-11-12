@@ -6,7 +6,7 @@
 
 <i>新一代轻量级 DiffSinger 自动音素标注工具</i>
 
-<b>如需更好的解决方案，请参阅[此处](https://github.com/wolfgitpr/LyricFA)。</b>
+<b>如需更好的解决方案，请参阅 [此处](https://github.com/wolfgitpr/LyricFA)。</b>
 
 <b>⚠️ 警告：程序永远存在不确定性，请不要 100%相信自动程序（即使程序有很高的可靠性），如果是重大项目请在使用该程序后对音素序列进行必要的检查</b>
 
@@ -32,7 +32,7 @@ faster-whisper
 pykakasi
 ```
 
-fast-phasr-next需要Python 3.8或更高版本。强烈建议您在安装依赖项之前通过Conda或venv创建一个虚拟环境。
+fast-phasr-next 需要 Python 3.8 或更高版本。强烈建议您在安装依赖项之前通过 Conda 或 venv 创建一个虚拟环境。
 
 ### 安装依赖
 
@@ -49,11 +49,11 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 pip install -r requirement.txt
 ```
 
-### 关于Whisper
+### 关于 Whisper
 
-这个项目使用fast-whisper，它是使用 CTranslate2重新实现OpenAI的Whisper模型，CTranslate2是Transformer模型的快速推理引擎。这种实现方式的速度比openai/whisper快4倍，但使用的内存更少，且具有相同的精度。通过CPU和GPU上的8-bit量化，可以进一步提高效率。
+这个项目使用 fast-whisper，它是使用 CTranslate2 重新实现 OpenAI 的 Whisper 模型，CTranslate2 是 Transformer 模型的快速推理引擎。这种实现方式的速度比 openai/whisper 快 4 倍，但使用的内存更少，且具有相同的精度。通过 CPU 和 GPU 上的 8-bit 量化，可以进一步提高效率。
 
-在RTX 3060 Laptop 6G GPU的测试环境中，使用Large-v3-fp16模型的情况下，标注一条6~10s的音频仅需要约0.7s，而在对50条音频的标注测试中可以获得约98.71%的准确率
+在 RTX 3060 Laptop 6G GPU 的测试环境中，使用 Large-v3-fp16 模型的情况下，标注一条 6~10s 的音频仅需要约 0.7s，而在对 50 条音频的标注测试中可以获得约 98.71%的准确率
 
 #### 可选模型
 
